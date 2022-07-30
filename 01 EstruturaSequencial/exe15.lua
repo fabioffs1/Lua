@@ -17,14 +17,16 @@ local salario_hora = io.read('n')
 io.write('Informe a quantidade de horas trabalhadas no mês: ')
 local horas_trabalhadas = io.read('n')
 local salario_bruto = salario_hora * horas_trabalhadas
-local desconto_IR = 0.89
+local desconto_IR = salario_bruto * 0.89
 local valor_IR = salario_bruto - desconto_IR
-local desconto_INSS = 0.92
+local desconto_INSS = salario_bruto * 0.92
 local valor_INSS = salario_bruto - desconto_INSS
-local desconto_sind = 0.95
+local desconto_sind = salario_bruto * 0.95
 local valor_sind = salario_bruto - desconto_sind
 local salario_liquido = salario_bruto - valor_IR - valor_INSS - valor_sind
 
-print('Salário Bruto: R$ ' .. string.format('%.2f', salario_bruto)
-print('Imposto de renda (11%): R$ ' .. string.format('%.2f', valor_IR)
-
+print('Salário Bruto: R$ ' .. string.format('%.2f', salario_bruto))
+print('Imposto de renda (11%): R$ ' .. string.format('%.2f', valor_IR))
+print('INSS (8%): R$ ' .. string.format('%.2f', valor_INSS))
+print('Desconto Sindicato (5%): R$ ' .. string.format('%.2f', valor_sind))
+print('Salário Líquido: R$ ' .. string.format('%.2f', salario_liquido))
