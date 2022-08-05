@@ -14,9 +14,10 @@ local galao = math.ceil( litros / 3.6 )
 local valor_latas = latas * 80
 local valor_galao = galao * 25
 local sobra_lata = litros % latas
-local galao_sobra_lata = sobra_lata // galao
+local galao_sobra_lata = math.ceil(sobra_lata / galao)
+local valor_galao_sobra_lata = (galao_sobra_lata * 25) + valor_latas
 
-print('Latas utilizadas: ' .. latas .. ' latas.')
-print('Galões utilizados: ' .. galao .. ' galões.')
-print('Quantidades misturadas: ' .. latas .. ' latas e ' .. galao_sobra_lata .. ' galões.')
+print('Latas utilizadas: ' .. latas .. ' latas | R$ ' .. string.format('%.2f', valor_latas))
+print('Galões utilizados: ' .. galao .. ' galões | R$ ' .. string.format('%.2f', valor_galao))
+print('Quantidades misturadas: ' .. latas .. ' latas e ' .. galao_sobra_lata .. ' galões | R$ ' .. string.format('%.2f', valor_galao_sobra_lata))
 
