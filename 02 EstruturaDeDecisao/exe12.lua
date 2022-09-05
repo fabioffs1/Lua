@@ -37,13 +37,13 @@ local percent_INSS = 10
 local valor_INSS = (salario_bruto * percent_INSS) / 100
 local percent_FGTS = 11
 local valor_FGTS = (salario_bruto * percent_FGTS) / 100
-local total_descontos = valor_IR - valor_INSS
+local total_descontos = valor_IR + valor_INSS
 local salario_liq = salario_bruto - total_descontos
 
-print('')
-
-
-
-
+print('Salário Bruto: R$ ' .. string.format('%.2f', salario_bruto))
+print('IR = R$ ' .. string.format('%.2f', valor_IR) )
+print('INSS = R$ ' .. string.format('%.2f', valor_INSS))
+print('FGTS = R$ ' .. string.format('%.2f', valor_FGTS))
+print('Total de Descontos: ')
 
 
