@@ -44,6 +44,6 @@ print('Salário Bruto: R$ ' .. string.format('%.2f', salario_bruto))
 print('IR = R$ ' .. string.format('%.2f', valor_IR) )
 print('INSS = R$ ' .. string.format('%.2f', valor_INSS))
 print('FGTS = R$ ' .. string.format('%.2f', valor_FGTS))
-print('Total de Descontos: ')
-
+print('Total de Descontos: R$ ' .. string.format('%.2f', total_descontos))
+print('Salário Líquido: R$ ' .. string.format('%.2f', salario_liq))
 
