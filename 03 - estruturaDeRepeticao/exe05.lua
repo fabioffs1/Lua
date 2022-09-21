@@ -5,8 +5,6 @@ entrada e permita repetir a operação.]]
 os.execute('clear')
 local opcao = 1
 while opcao == 1 do
-
-    
     io.write('Informe a população do país A: ')
     local populacao_a = io.read('n')
     io.write('Informe a taxa de crescimento do país A:')
@@ -39,15 +37,3 @@ while opcao == 1 do
     until opcao == 1 or opcao == 2
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
