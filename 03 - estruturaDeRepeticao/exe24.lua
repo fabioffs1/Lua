@@ -16,12 +16,4 @@ end
 
 media = soma / qtd_notas
 
-print('Media final: ' .. string.format('%.2f', media))
-
-
-
-
-
-
-
-
+print('Media final: ' .. string.format('%.2f', media))\s
