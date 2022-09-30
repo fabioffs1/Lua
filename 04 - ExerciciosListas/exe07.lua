@@ -7,6 +7,7 @@ local soma, multi = 0, 1
 
 for i=1, 5 do
     io.write('Informe o '..i..'º número: ')
+    nums[i] = io.read('n')
     soma = soma + nums[i]
     multi = multi * nums[i]
 end
@@ -16,7 +17,7 @@ for i=1, 5 do
     io.write(nums[i]..' ')
 end
 
-print('Soma: '..soma..' | Multiplicação: '..multi)
+print('\nSoma: '..soma..' | Multiplicação: '..multi)
 
 
 
